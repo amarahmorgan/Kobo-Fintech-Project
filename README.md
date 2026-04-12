@@ -61,13 +61,17 @@ Amarah Morgan - Yanda Kiviet
  API                 → Node.js backend service
 
  Database            → SQL schema + audit queries
- - sql-queries        → 50+ financial & integrity queries
+ - sql-queries       → 50+ financial & integrity queries
 
  Automation          → Playwright (TypeScript, POM)
 
  Postman             → API collections & test scripts (request and response)
 
- CONTRIBUTIONS.md    → Team logs & defect tracking
+ Defects.md          → Defect tracking  
+
+ TaskQuestions.md    → Answers to task questions
+
+ CONTRIBUTIONS.md    → Team logs
 
  README.md           → Project documentation
 
