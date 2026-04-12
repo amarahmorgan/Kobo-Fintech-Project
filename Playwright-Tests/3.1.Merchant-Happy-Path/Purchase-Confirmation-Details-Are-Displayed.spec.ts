@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('User can select different voucher types', async ({ page }) => {
+test('Purchase confirmation details are displayed', async ({ page }) => {
   await page.goto('https://quality-engineering-labs.vercel.app/login.html');
 
   await page.getByTestId('login-username').fill('admin');
@@ -14,10 +14,15 @@ test('User can select different voucher types', async ({ page }) => {
   await page.getByTestId('add-cart-8').click();
   await page.getByTestId('add-cart-6').click();
 
-  
+  await page.waitForTimeout(2000);
+
+  await expect(page.getByText(/Cart:\s*4\s*items/i)).toBeVisible();
+  await page.getByRole('button', { name: 'Open cart' }).click();
+  await page.getByRole('button', { name: 'Checkout' }).click();
+
   await page.waitForTimeout(1500);
 
-  
-  await expect(page.getByText(/Cart:\s*4\s*items/i)).toBeVisible();
-
-});
+  await page.getByRole('button', { name: 'Confirm & Pay' }).click();
+  await expect(page.getByRole('heading', { name: 'Purchase Complete!' })).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText(/Purchase complete! .* deducted from wallet/i)).toBeVisible();
+})
