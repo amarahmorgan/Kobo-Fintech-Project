@@ -1,0 +1,29 @@
+{
+            "EntryID": "6A30AE99-3BCE-4B11-BE4B-9416433F3E2D",
+            "WalletID": 1,
+            "ProductID": 1,
+            "Amount": 5,
+            "CommissionAmount": 0.25,
+            "ExternalReference": "REF-012",
+            "ProcessingStatus": "Completed",
+            "CreatedTimestamp": "2026-04-13T03:15:24.237Z"
+        },
+        {
+            "EntryID": "CCF5C1CB-5A29-45AF-AD27-57AD77C9FBE0",
+            "WalletID": 10,
+            "ProductID": 3,
+            "Amount": 30,
+            "CommissionAmount": 1.65,
+            "ExternalReference": "REF-011",
+            "ProcessingStatus": "Completed",
+            "CreatedTimestamp": "2026-04-13T03:09:11.170Z"
+        },
+
+        pm.test("Transactions retrieved", () => {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Transactions array exists", () => {
+    const res = pm.response.json();
+    pm.expect(res).to.exist;
+});

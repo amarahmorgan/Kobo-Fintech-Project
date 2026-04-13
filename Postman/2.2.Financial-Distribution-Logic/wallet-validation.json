@@ -1,0 +1,21 @@
+{
+    "data": {
+        "WalletID": 1,
+        "UserID": 1,
+        "Balance": null,
+        "CurrencyCode": "ZAR",
+        "LastUpdated": "2026-04-13T03:15:24.233Z",
+        "FullName": "Admin_Kabo",
+        "MSISDN": "27110000001",
+        "ServiceStatus": "Active"
+    },
+    "traceId": "e1563380-6b2e-4142-92ee-6555f06ec0c4"
+}
+pm.test("Wallet retrieved", () => {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Balance exists", () => {
+    const res = pm.response.json();
+    pm.expect(res.Balance || res.balance).to.exist;
+});

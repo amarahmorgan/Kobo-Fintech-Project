@@ -1,0 +1,34 @@
+{
+  "walletId": 1,
+  "productId": 3,
+  "reference": "REF-004"
+}
+
+{
+    "status": "SUCCESS",
+    "pin": "737606783",
+    "traceId": "8a41f8b7-54a2-492c-bebc-d5bb14140f32"
+}
+
+pm.test("Status is 201 (Created)", () => {
+    pm.response.to.have.status(201);
+});
+
+pm.test("Transaction successful", () => {
+    const res = pm.response.json();
+    pm.expect(res.status).to.eql("SUCCESS");
+});
+
+pm.test("PIN is generated", () => {
+    const res = pm.response.json();
+    pm.expect(res.pin).to.exist;
+});
+
+pm.test("TraceId exists", () => {
+    const res = pm.response.json();
+    pm.expect(res.traceId).to.exist;
+});
+
+pm.test("Response time < 2s", () => {
+    pm.expect(pm.response.responseTime).to.be.below(2000);
+});

@@ -1,0 +1,13 @@
+{
+  "walletId": 1,
+  "productId": 1,
+  "reference": "@@@###$$$"
+}
+{
+    "status": "SUCCESS",
+    "pin": "1960140984",
+    "traceId": "3f58de94-16e3-48fc-a20a-1686fdbf8d46"
+}
+pm.test("Special characters handled", () => {
+    pm.expect(pm.response.code).to.be.oneOf([201, 400]);
+});

@@ -1,0 +1,13 @@
+{
+  "walletId": 0,
+  "productId": 1,
+  "reference": "REF-009"
+}
+{
+    "error": "Bad Request",
+    "message": "walletId, productId, and reference are required.",
+    "traceId": "51aa5959-feb5-4c49-b2ed-b9167b55a4e2"
+}
+pm.test("Zero wallet ID validation", () => {
+    pm.expect(pm.response.code).to.not.eql(201);
+});

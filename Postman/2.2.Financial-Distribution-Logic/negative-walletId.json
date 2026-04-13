@@ -1,0 +1,13 @@
+{
+  "walletId": -1,
+  "productId": 1,
+  "reference": "REF-008"
+}
+{
+    "error": "Service Error",
+    "message": "",
+    "traceId": "60b266e1-eecd-43ae-8cc5-b955e7348ac8"
+}
+pm.test("Negative wallet ID should be rejected", () => {
+    pm.expect(pm.response.code).to.not.eql(201);
+});

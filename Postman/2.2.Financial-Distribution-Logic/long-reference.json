@@ -1,0 +1,13 @@
+{
+  "walletId": 1,
+  "productId": 1,
+  "reference": "REF-VERY-LONG-STRING-123456789"
+}
+{
+    "status": "SUCCESS",
+    "pin": "104876094",
+    "traceId": "5669be82-cd22-4a2f-98fa-cb9fdf285c61"
+}
+pm.test("Long reference handled", () => {
+    pm.expect(pm.response.code).to.be.oneOf([201, 400]);
+});

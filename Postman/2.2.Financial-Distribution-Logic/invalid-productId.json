@@ -1,0 +1,13 @@
+{
+  "walletId": 1,
+  "productId": 999,
+  "reference": "REF-006"
+}
+{
+    "error": "Service Error",
+    "message": "",
+    "traceId": "fdbe9703-2de4-4b12-ad1a-cf9667ad39ca"
+}
+pm.test("BUG: API crashes with invalid product", () => {
+    pm.response.to.have.status(500);
+});

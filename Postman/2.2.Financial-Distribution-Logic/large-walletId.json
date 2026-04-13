@@ -1,0 +1,13 @@
+{
+  "walletId": 999999,
+  "productId": 1,
+  "reference": "REF-010"
+}
+{
+    "error": "Service Error",
+    "message": "",
+    "traceId": "dd778dd4-7e9a-47ac-b69a-4ce726559293"
+}
+pm.test("Large wallet ID handled", () => {
+    pm.expect(pm.response.code).to.be.oneOf([400, 404, 500]);
+});

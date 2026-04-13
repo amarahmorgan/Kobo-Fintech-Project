@@ -1,0 +1,13 @@
+{
+  "walletId": 1,
+  "productId": 1,
+  "reference": "REF-012"
+}
+{
+    "status": "SUCCESS",
+    "pin": "1962848535",
+    "traceId": "e6a52284-7740-4d37-a2b6-fa6bff88aa0e"
+}
+pm.test("Multiple transactions processed", () => {
+    pm.response.to.have.status(201);
+});

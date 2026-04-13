@@ -1,0 +1,13 @@
+{
+  "walletId": 1,
+  "productId": 1,
+  "reference": "REF-001"
+}
+{
+    "status": "SUCCESS",
+    "pin": "1893658079",
+    "traceId": "82249325-76f1-41de-b8c6-7c15e790e10d"
+}
+pm.test("BUG: Duplicate reference allowed", () => {
+    pm.response.to.have.status(201);
+});
