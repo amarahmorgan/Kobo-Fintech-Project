@@ -1,0 +1,16 @@
+{
+  "walletId": 1
+}
+{
+    "error": "Bad Request",
+    "message": "walletId, productId, and reference are required.",
+    "traceId": "4a28494a-f962-4bd5-9719-41810da4f82e"
+}
+pm.test("Should return 400 for missing fields", () => {
+    pm.response.to.have.status(400);
+});
+
+pm.test("Error message present", () => {
+    const res = pm.response.json();
+    pm.expect(res.message).to.exist;
+});

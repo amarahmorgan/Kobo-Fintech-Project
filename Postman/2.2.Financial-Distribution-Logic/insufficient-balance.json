@@ -1,0 +1,18 @@
+{
+  "walletId": 10,
+  "productId": 3,
+  "reference": "REF-011"
+}
+{
+    "status": "SUCCESS",
+    "pin": "2070654736",
+    "traceId": "e71ad1c2-7ecd-41ae-9f4a-48dfdf5b1392"
+}
+pm.test("BUG: Transaction succeeds despite insufficient balance", () => {
+    pm.response.to.have.status(201);
+});
+
+pm.test("Incorrect success status", () => {
+    const res = pm.response.json();
+    pm.expect(res.status).to.eql("SUCCESS");
+});

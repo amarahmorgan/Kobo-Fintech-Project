@@ -1,0 +1,13 @@
+{
+  "walletId": 999,
+  "productId": 1,
+  "reference": "REF-007"
+}
+{
+    "error": "Service Error",
+    "message": "",
+    "traceId": "1dc09cb2-2c60-4ac3-a434-0402afd15c1a"
+}
+pm.test("Invalid wallet should fail", () => {
+    pm.expect(pm.response.code).to.be.oneOf([400, 404, 500]);
+});
