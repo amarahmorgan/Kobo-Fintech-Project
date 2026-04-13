@@ -1,0 +1,13 @@
+{
+  "request": {
+    "msisdn": "27110009989",
+    "fullName": "John Doe",
+    "email": "john@kobo.co.za",
+    "password": "SecurePass1",
+    "role": "Merchant"
+  },
+  "response": {
+    "statusCode": 201,
+    "body": {}
+  }
+}
