@@ -1,13 +1,17 @@
 {
-  "walletId": 1,
+  "request": {
+    "walletId": 1,
   "productId": 1,
   "reference": "REF-002"
-}
-{
+  },
+  "response": {
     "status": "SUCCESS",
     "pin": "538908541",
     "traceId": "c7df5dfb-46d8-47fc-8408-d911c5418d2a"
+    
+  }
 }
+
 pm.test("Status is 201 (Created)", () => {
     pm.response.to.have.status(201);
 });
@@ -29,4 +33,4 @@ pm.test("TraceId exists", () => {
 
 pm.test("Response time < 2s", () => {
     pm.expect(pm.response.responseTime).to.be.below(2000);
-});
+});}
