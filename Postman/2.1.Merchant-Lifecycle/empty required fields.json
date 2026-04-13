@@ -1,0 +1,13 @@
+{
+  "request": {
+    "msisdn": "27356798752",
+    "fullName": "",
+    "email": "",
+    "password": "securePass123",
+    "role": "Merchant"
+  },
+  "response": {
+    "statusCode": 400,
+    "body": {}
+  }
+}

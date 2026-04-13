@@ -1,0 +1,13 @@
+{
+  "request": {
+    "msisdn": "27110009989",
+    "fullName": "amarah morgan",
+    "email": "a_morg",
+    "password": "SecurePass1",
+    "role": "Merchant"
+  },
+  "response": {
+    "statusCode": 400,
+    "body": {}
+  }
+}
