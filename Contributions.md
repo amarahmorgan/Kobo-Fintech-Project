@@ -6,7 +6,7 @@
 
 ---
 
-## 🔷 Task 1: Environment Setup & Git Governance
+## Task 1: Environment Setup & Git Governance
 **Contributors:** Amarah & Yanda  
 
 - Executed Kobo.sql and verified database setup (5000+ records)
@@ -17,9 +17,9 @@
 
 ---
 
-## 🔷 Task 2: API Testing (Postman)
+## Task 2: API Testing (Postman)
 
-### 🔹 Task 2.1 — Merchant Lifecycle
+### Task 2.1 — Merchant Lifecycle
 **Completed by:** Yanda  
 
 - Created 15+ API requests for merchant lifecycle
@@ -31,7 +31,7 @@
 
 ---
 
-### 🔹 Task 2.2 — Financial & Distribution Logic
+### Task 2.2 — Financial & Distribution Logic
 **Completed by:** Amarah  
 
 - Created 20 API requests for voucher issuance and wallet processing
@@ -46,7 +46,7 @@
 
 ---
 
-### 🔹 Task 2.3 — Identity & RBAC
+### Task 2.3 — Identity & RBAC
 **Completed by:** Amarah  
 
 - Performed privilege escalation testing
@@ -59,9 +59,9 @@
 
 ---
 
-## 🔷 Task 3: Playwright Automation
+## Task 3: Playwright Automation
 
-### 🔹 Task 3.1 — Merchant Happy Path
+### Task 3.1 — Merchant Happy Path
 **Completed by:** Yanda  
 
 - Automated full merchant journey:
@@ -73,7 +73,7 @@
 
 ---
 
-### 🔹 Task 3.2 — Negative & Boundary Testing
+### Task 3.2 — Negative & Boundary Testing
 **Completed by:** Amarah  
 
 - Automated negative scenarios:
@@ -86,7 +86,7 @@
 
 ---
 
-### 🔹 Task 3.3 — Cross-Role Synchronisation
+### Task 3.3 — Cross-Role Synchronisation
 **Completed by:** Amarah & Yanda  
 
 - Yanda:
@@ -100,9 +100,9 @@
 
 ---
 
-## 🔷 Task 4: Database Testing (SQL)
+## Task 4: Database Testing (SQL)
 
-### 🔹 Task 4.1 — Financial Reconciliation
+### Task 4.1 — Financial Reconciliation
 **Completed by:** Yanda  
 
 - Wrote queries to detect ghost transactions
@@ -110,7 +110,7 @@
 
 ---
 
-### 🔹 Task 4.2 — Settlement Validation
+### Task 4.2 — Settlement Validation
 **Completed by:** Amarah  
 
 - Created JOIN queries across Users, Products, and Transactions
@@ -118,7 +118,7 @@
 
 ---
 
-### 🔹 Task 4.3 — Data Integrity & Constraints
+### Task 4.3 — Data Integrity & Constraints
 **Completed by:** Amarah  
 
 - Identified data issues:
@@ -128,7 +128,7 @@
 
 ---
 
-### 🔹 Task 4.4 — Business Intelligence Reporting
+### Task 4.4 — Business Intelligence Reporting
 **Completed by:** Yanda  
 
 - Generated reports:
@@ -138,7 +138,7 @@
 
 ---
 
-## 🔷 Task 5: Documentation & Analysis
+## Task 5: Documentation & Analysis
 
 ### 📄 Defects Register (`defects.md`)
 **Contributors:** Amarah & Yanda  
@@ -172,6 +172,6 @@
 
 ---
 
-## 🔷 Summary
+## Summary
 
 This project was completed collaboratively, with responsibilities divided across API testing, automation, and database validation. Both team members contributed to defect identification, documentation, and overall system analysis, ensuring comprehensive test coverage of the fintech platform.
