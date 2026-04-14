@@ -5,7 +5,7 @@ During API testing (Postman), UI automation (Playwright), database validation (S
 
 ---
 
-# 🔴 🔷 CRITICAL FINANCIAL DEFECTS
+# CRITICAL FINANCIAL DEFECTS
 
 ---
 
@@ -54,7 +54,7 @@ During API testing (Postman), UI automation (Playwright), database validation (S
 
 ---
 
-# 🔴 🔷 INPUT VALIDATION DEFECTS
+# INPUT VALIDATION DEFECTS
 
 ---
 
@@ -93,7 +93,7 @@ During API testing (Postman), UI automation (Playwright), database validation (S
 
 ---
 
-# 🔴 🔷 UI & USER EXPERIENCE DEFECTS
+# UI & USER EXPERIENCE DEFECTS
 
 ---
 
@@ -111,7 +111,7 @@ During API testing (Postman), UI automation (Playwright), database validation (S
 
 ---
 
-# 🔴 🔷 CROSS-ROLE SYNCHRONISATION DEFECTS
+# CROSS-ROLE SYNCHRONISATION DEFECTS
 
 ---
 
@@ -143,7 +143,7 @@ During API testing (Postman), UI automation (Playwright), database validation (S
 
 ---
 
-# 🔴 🔷 RBAC & SECURITY DEFECTS
+# RBAC & SECURITY DEFECTS
 
 ---
 
@@ -182,7 +182,7 @@ During API testing (Postman), UI automation (Playwright), database validation (S
 
 ---
 
-# 🔴 🔷 DATABASE & DATA INTEGRITY DEFECTS
+# DATABASE & DATA INTEGRITY DEFECTS
 
 ---
 
